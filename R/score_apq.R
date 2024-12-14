@@ -11,11 +11,11 @@
 #' @return 处理后的数据列表
 #' @export
 #'
-#' PI - Parental Involvement（父母参与）
-#' PP - Positive Parenting（积极养育）
-#' PMS - Poor Monitoring/Supervision（监管不足）
-#' ID - Inconsistent Discipline（惩戒不一致）
-#' CP - Corporal Punishment（体罚）
+# PI - Parental Involvement（父母参与）
+# PP - Positive Parenting（积极养育）
+# PMS - Poor Monitoring/Supervision（监管不足）
+# ID - Inconsistent Discipline（惩戒不一致）
+# CP - Corporal Punishment（体罚）
 
 score_apq <- function(data,
                       rater = c("child", "parent"),

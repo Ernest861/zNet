@@ -2,9 +2,9 @@
 
 export(ders_stats_report)
 export(dynamic_network_analysis)
-export(handle_missing)
 export(prepare_long_data)
 export(reverse_ders)
 export(reverse_pd)
 export(score_apq)
+export(score_nbh)
 import(ufs)
