@@ -1,6 +1,6 @@
 Package: zNet
 Title: Longitudinal Network Analysis Tools
-Version: 0.0.1.0000
+Version: 0.0.1.1000
 Authors@R: person('Hui', 'Zheng', email = 'zh.dmtr@gmail.com', role = c('aut', 'cre'))
 Description: Tools for processing and analyzing longitudinal network data.
 License: MIT + file LICENSE
