@@ -1,11 +1,21 @@
+#' Dynamic Panel Network Analysis for Longitudinal Data
+#' @param data 输入数据框，列为项目，行为被试
+#' ena
+#' @param output_dir 图形输出路径
+#' @param seed  随机数种子
+#' @return 返回探索络分析结果列表bootstrap_ega, stability, dimension_selection
+#' @export
+
+
 # 探索性网络分析函数
-library(EGAnet)
-library(qgraph)
-library(igraph)
+
+#library(EGAnet)
+#library(qgraph)
+#library(igraph)
 
 exploratory_network_analysis <- function(
     data,                   # 输入数据框，列为项目，行为被试
-    max_dimensions = 6,     # 最大探索维度数
+    max_dimensions = 6,     # 最大探索维度数，实际上没用到
     plot_output = TRUE,     # 是否绘制输出
     output_path = NULL,     # 图形输出路径
     seed = 234              # 随机数种子

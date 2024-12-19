@@ -1,3 +1,19 @@
+#' Handle Missing Values in Longitudinal Survey Data
+#'
+#' @title 处理纵向问卷数据的缺失值
+#' @description 使用多种方法处理纵向问卷数据中的缺失值，包括FIML和多重插补
+#'
+#' @param data 数据框，包含纵向问卷数据
+#' @param id_col ID列名，默认为"src_subject_id"
+#' @param time_col 时间列名，默认为"eventname"
+#' @param method 缺失值处理方法，可选"fiml"（完全信息最大似然）或"mi"（多重插补）
+#' @param missing_values 缺失值编码向量
+#' @param n_imputations 如果使用多重插补，指定插补次数
+#' @param missing_threshold 允许的缺失值比例阈值，默认0.2
+#'
+#' @return 处理后的数据列表，包含处理后的数据和处理报告
+#' @export
+
 handle_missing <- function(data,
                            id_col = "src_subject_id",
                            time_col = "eventname",
